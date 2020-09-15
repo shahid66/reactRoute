@@ -26,7 +26,9 @@ const Cart = (props) => {
             <p><small>Tax: {tax}</small></p>
             <h3>Total Price : {(grandTotal).toFixed(2)}</h3>
             <br></br>
-            <Link to={"/review"}><button className="addToCartBtn">Review order</button></Link>
+            {
+                props.children
+            }
         </div>
     );
 };

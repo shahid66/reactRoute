@@ -4,7 +4,7 @@ import './ProductReview.css';
 
 
 const ProductReview = (props) => {
-    console.log(props)
+    
 const{name,quantity,key,price}=props.product;
     return (
         <div className="reviewContent">
